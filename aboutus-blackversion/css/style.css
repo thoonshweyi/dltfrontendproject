@@ -1,5 +1,7 @@
 /* Start About Us Section */
-
+.aboutuss{
+    background-color: #2b2b2b;
+}
 .overs{
     overflow: hidden;
 }
@@ -7,6 +9,9 @@
     position: relative;
 }
 .abouts{
+    font-size: 1.1rem;
+    color: #f4f4f4;
+    font-weight: 450;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,6 +26,7 @@
     transition-delay: 0s;
 }
 .infotexts{
+    color: rgba(255, 255, 255, 0.7);
     opacity: 0;
     transform: translate(-100%);
     transition: all 0.9s ease-in-out;
@@ -30,15 +36,20 @@
     transform: translate(0%);
 }
 .circles{
-    display: inline-block;
+    
     width: 80px;
     height: 80px;
     font-size: 2rem;
     color: white;
     background-color: orange;
     border-radius: 50%;
-    text-align: center;
-    line-height: 70px;
+    /* text-align: center;
+    line-height: 70px; */
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
     cursor: pointer;
 }
 .textshows .circles{

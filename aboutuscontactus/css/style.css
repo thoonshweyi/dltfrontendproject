@@ -1,0 +1,73 @@
+/* Start About Us Section */
+
+.overs{
+    overflow: hidden;
+}
+.parents{
+    position: relative;
+}
+.abouts{
+    font-size: 1.1rem;
+    color: #222;
+    font-weight: 450;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+    transition: all 0.7s ease-in-out;
+    transition-delay: 0.5s;
+}
+.textshows .abouts{
+    transform: translate(-50%,-60px);
+    transition-delay: 0s;
+}
+.infotexts{
+    opacity: 0;
+    transform: translate(-100%);
+    transition: all 0.9s ease-in-out;
+}
+.textshows .infotexts{
+    opacity: 1;
+    transform: translate(0%);
+}
+.circles{
+    
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    color: white;
+    background-color: orange;
+    border-radius: 50%;
+    /* text-align: center;
+    line-height: 70px; */
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.textshows .circles{
+    background-color: transparent;
+    border: 2px solid orange;
+    color: orange;
+}
+/* End About Us Section */
+
+/* Strat Contact Us Section */
+
+.contacts{
+    width: 50px;
+    height: 50px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* End Contact Us Section */
