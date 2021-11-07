@@ -1,5 +1,8 @@
 /* Start About Us Section */
-
+.aboutussections{
+    /* background-color: rgb(255, 193, 7, 0.7); */
+    background-color: #ffd166;
+}
 .overs{
     overflow: hidden;
 }
@@ -24,6 +27,7 @@
     transition-delay: 0s;
 }
 .infotexts{
+    color: #555;
     opacity: 0;
     transform: translate(-100%);
     transition: all 0.9s ease-in-out;
@@ -57,11 +61,38 @@
 /* End About Us Section */
 
 /* Strat Contact Us Section */
+.sticks{
+    display: inline-block;
+    width: 3px;
+    height: 30px;
+    /* background-color: rgba(194, 157, 89, 1); */
+    background-color: #85182a;
 
+    vertical-align: middle;
+}
+.contactuss{
+    background-color: #f4f4f4;
+}
+.contactinfos.fromlefts{
+    opacity: 0;
+    animation: fromleft 0.8s;
+    animation-fill-mode: forwards;
+}
+.contactinfos.fromlefts.locations{
+    animation-delay: 0;
+}
+.contactinfos.fromlefts.phones{
+    animation-delay: 0.4s;
+}
+.contactinfos.fromlefts.emails{
+    animation-delay: 0.8s;
+}
 .contacts{
     width: 50px;
     height: 50px;
     background-color: #f4f4f4;
+    /* color: rgba(194, 157, 89, 1); */
+    color: #85182a;
     border-radius: 5px;
     box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.5);
 
@@ -69,5 +100,59 @@
     justify-content: center;
     align-items: center;
 }
+.contactlinks{
+    color: #000;
+    text-decoration: none;
+}
 
+.locationicons{
+    animation: biggerani 1s infinite;
+}
+.telicons{
+    animation: shakeani 1s ease-in-out infinite;
+    /* transform : rotate(-20deg); */
+    
+}
+.emailicons{
+
+    animation: jampani 1s ease-in infinite;
+}
+@keyframes fromleft {
+    0%{
+        opacity: 0;
+        transform: translate(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes biggerani{
+    0%{
+        transform:scale(0);
+    }
+    100%{
+        transform:scale(2);
+    }
+}
+@keyframes shakeani{
+    0%{
+        transform : rotate(-20deg);
+    }
+    100%{
+        transform : rotate(20deg);
+    }
+}
+@keyframes jampani{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.maps{
+    width: 100%;
+    height: 70vh;
+}
 /* End Contact Us Section */
